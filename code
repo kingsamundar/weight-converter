@@ -1,0 +1,12 @@
+weight = int(input("What is your weight?"))
+print(weight)
+question = input("Is your weight in 'pounds' or 'kilograms'? Answer with 'pounds' or 'kilograms' ")
+print(question)
+
+if question == "pounds":
+    converted_weight = weight * 0.45
+    print(f"Your weight in kilograms is {converted_weight}")
+elif question == "kilograms":
+    converted_weight = weight * 2.2
+    print(f"Your weight in pounds is {converted_weight}")
+else: print('Incorrect reply given... terminating process')
